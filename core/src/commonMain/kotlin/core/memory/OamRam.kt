@@ -1,7 +1,7 @@
-package io.github.kotlin.fibonacci.core.memory
+package core.memory
 
-import io.github.kotlin.fibonacci.core.bus.AddressRange
+import core.bus.AddressRange
 
 class OamRam : AddressRange(0xFE00, 0xFE9F) {
-
+    override val deviceName = "Object Attribute Mapper RAM (OAM)"
 }

@@ -1,18 +1,23 @@
-package io.github.kotlin.fibonacci.core.rom
+package core.rom
 
-import io.github.kotlin.fibonacci.core.bus.AddressRange
+import core.bus.AddressRange
 
 class Rom {
 
-    class BootRom : AddressRange(0x0000, 0x00FF) {
+    class BootRom(bytes: Array<Int>) : AddressRange(0x0000, 0x00FF) {
 
+        override val deviceName = "Boot ROM"
+
+        init {
+            memory = bytes
+        }
     }
 
     class FixedRom : AddressRange(0x0000, 0x3FFF) {
-
+        override val deviceName = "Fixed Cartridge ROM"
     }
 
     class SwitchableRom : AddressRange(0x4000, 0x7FFF) {
-
+        override val deviceName = "Switchable Cartridge ROM"
     }
 }

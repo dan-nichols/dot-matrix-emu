@@ -1,5 +1,6 @@
-package app.rollvault.dme
+package app.dme
 
+import app.dme.Platform
 import platform.UIKit.UIDevice
 
 class IOSPlatform: Platform {

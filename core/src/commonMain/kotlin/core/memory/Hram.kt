@@ -1,7 +1,7 @@
-package io.github.kotlin.fibonacci.core.memory
+package core.memory
 
-import io.github.kotlin.fibonacci.core.bus.AddressRange
+import core.bus.AddressRange
 
 class Hram : AddressRange(0xFF80, 0xFFFE) {
-
+    override val deviceName = "High RAM (HRAM)"
 }

@@ -1,4 +1,4 @@
-package app.rollvault.dme
+package app.dme
 
 interface Platform {
     val name: String

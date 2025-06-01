@@ -1,4 +1,8 @@
-package io.github.kotlin.fibonacci.core.rom
+package core.rom
 
 class RomLoader {
+
+    fun load(bytes: Array<Int>) {
+
+    }
 }

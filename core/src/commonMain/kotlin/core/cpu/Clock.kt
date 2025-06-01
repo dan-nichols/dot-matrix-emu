@@ -1,4 +1,4 @@
-package io.github.kotlin.fibonacci.core.cpu
+package core.cpu
 
 class Clock {
 }
